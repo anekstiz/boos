@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Клавиатурный тренажер</title>
+	<!-- <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css?family=PT+Mono&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+</head>
+<body>
+	
+	<!-- Logo and Results -->
+	<div class="container">
+		<div class="logo">
+			<i class="fas fa-keyboard"></i> Клавиатурный тренажер
+		</div>
+		
+		<!-- Results -->
+		<div class="results ">
+			<div class="results-title">Результаты предыдущей строки:</div>
+			<div class="indicators">
+				<div class="indicator">
+					<div class="indicator__icon">
+						<i class="fas fa-tachometer-alt"></i>
+					</div>
+					<div class="indicator__name">Символов в минуту:</div>
+					<div class="indicator__value">266</div>
+				</div>
+				<div class="indicator">
+					<div class="indicator__icon indicator__icon--errors">
+						<i class="fas fa-exclamation-circle"></i>
+					</div>
+					<div class="indicator__name">Ошибок:</div>
+					<div class="indicator__value">1.41%</div>
+				</div>
+			</div>
+		</div>
+		<!-- // Results -->
+
+	</div>
+	<!-- // Logo and Results -->
+
+	<div class="devider"></div>
+
+	<div class="container">
+
+		<!-- Input field -->
+		<form action="">
+			<input 
+					id = "input"
+					type="text" 
+					class="input " 
+					placeholder="Поле для ввода текста" 
+			>
+		</form>
+		<!-- // Input field -->
+
+		<!-- Text -->
+		<!-- <div class="text error"> -->
+		<div class="text" id="textExample">
+			<div class="line line-1">
+				<span class="done"> На переднем плане, прямо перед</span> 
+				<span class="hint">н</span>ами, расположен был дворик, где стоял
+			</div>
+			<div class="line line-2">
+				наполовину вычищенный автомобиль. Шофер Остин был на этот раз
+			</div>
+			<div class="line line-3">
+				уволен окончательно и бесповоротно. Он раскинулся на земле,
+			</div>
+			<div class="line line-4 hidden">
+				и большая черная ссадина на лбу свидетельствовала, по-видимому, о том,
+			</div>
+			<div class="line line-5 hidden"> что он при падении ударился головою о подножку или щит.</div>
+		</div>
+		<!-- // Text  -->
+		
+		<!-- Keyboard -->
+		<div class="keyboard">
+			<div class="line">
+				<div>Ё</div>
+				<div>1</div>
+				<div>2</div>
+				<div>3</div>
+				<div>4</div>
+				<div>5</div>
+				<div>6</div>
+				<div>7</div>
+				<div>8</div>
+				<div>9</div>
+				<div>0</div>
+				<div>-</div>
+				<div>+</div>
+				<div class="backspace">Backspace</div>
+			</div>
+			<div class="line">
+				<div class="tab">Tab</div>
+				<div>Й</div>
+				<div>Ц</div>
+				<div>У</div>
+				<div>К</div>
+				<div>Е</div>
+				<div class="hint">Н</div>
+				<div>Г</div>
+				<div>Ш</div>
+				<div>Щ</div>
+				<div>З</div>
+				<div>Х</div>
+				<div>Ъ</div>
+				<div>\</div>
+			</div>
+			<div class="line">
+				<div class="caps">Caps Lock</div>
+				<div>Ф</div>
+				<div>Ы</div>
+				<div>В</div>
+				<div>А</div>
+				<div>П</div>
+				<div>Р</div>
+				<div>О</div>
+				<div>Л</div>
+				<div>Д</div>
+				<div>Ж</div>
+				<div>Э</div>
+				<div class="enter">Enter</div>
+			</div>
+			<div class="line">
+				<div class="shift">Shift</div>
+				<div>Я</div>
+				<div>Ч</div>
+				<div>С</div>
+				<div>М</div>
+				<div>И</div>
+				<div>Т</div>
+				<div>Ь</div>
+				<div>Б</div>
+				<div>Ю</div>
+				<div>. <sup>,</sup></div>
+				<div class="shift">Shift</div>
+			</div>
+			<div class="line">
+				<div class="space"></div>
+				<div class="alt">Alt</div>
+			</div>
+		</div>
+		<!-- // Keyboard -->
+	</div>
+
+	<div class="devider"></div>
+	<div class="container">
+		<!-- Copyright -->
+		<div class="copyright">
+			<p>Проект сделал [Ваше имя] [Ваша фамилия] в  рамках интенсива по JS в <a href="https://vk.com/webcademy" target="_blank">WebCademy.ru</a></p>
+		</div>
+		<!-- // Copyright -->
+	</div>
+
+	<script src="js/main.js"></script>
+</body>
+
+</html>
